@@ -1,104 +1,115 @@
 .comand {
-    background-color: #f5f4fa;
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  
-  .team__member {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team__member {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.text-acent-com {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-acent-color);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.text-acent-mail {
+  color: var(--text-acent-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: flex;
+}
+
+.text-acent-mail:focus,
+.text-acent-mail:hover {
+  color: var(--text-hover-color);
+}
+.comand__title {
+  margin-bottom: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
     font-family: Roboto;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-  }
-  .text-acent-com {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--text-acent-color);
-    align-items: center;
-    justify-content: center;
-    display: flex;
-  }
-  .text-acent-mail {
-    color: var(--text-acent-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    display: flex;
-  }
-  
-  .text-acent-mail:focus,
-  .text-acent-mail:hover {
-    color: var(--text-hover-color);
-  }
-  .comand__title {
-    margin-bottom: 50px;
-    font-family: Roboto;
-    font-style: normal;
     font-weight: bold;
-    font-size: 28px;
-    line-height: 1.17;
+    font-size: 36px;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+  }
+}
 
-
-
-    @media screen and ( min-width:1200px) {
-      font-family: Roboto;
-      font-weight: bold;
-      font-size: 36px;
-      line-height: 1.16;
-      text-align: center;
-      letter-spacing: 0.03em;
-    }
+.team {
+  @media screen and (min-width: 480px) {
+    margin-left: -30px;
+    margin-top: -30px;
   }
   
-  .team {
+
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    
-
-    @media screen and ( min-width:1200px) {
-      margin-left: -30px;
-      margin-top: -30px;
-    }
-
   }
-  .team__man {
-    padding: 30px 32px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: -30px;
+    margin-top: -30px;
   }
-  
-  
-  .team__list {
+}
+.team__man {
+  padding: 30px 32px;
+}
+
+.team__list {
+  @media screen and (min-width: 480px) {
     background-color: var(--primary-white-color);
-    
+
     flex-basis: 100%;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    
-   
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    background-color: var(--primary-white-color);
 
-   
+    margin-top: 30px;
 
-    @media screen and ( min-width:1200px) {
-      flex-basis: calc((100% - 4 * 30px) / 4);
-      background-color: var(--primary-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+    background-color: var(--primary-white-color);
     margin-left: 30px;
     margin-top: 30px;
-    flex-basis: 100%;
+
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    }
-
   }
 
  
+}
