@@ -1,0 +1,169 @@
+.modal {
+    background: var(--primary-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    padding: 40px;
+  }
+  
+  .modal__close-btn {
+    background: var(--primary-white-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+  }
+  .modal__close-btn:hover,
+  .modal__close-btn:focus{
+    fill:  var(--text-hover-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property:svg;
+  
+  }
+  .modal__block{
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .modal__icon{
+    position: absolute;
+    bottom: 13px;
+    left: 12px;
+  }
+  
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: opacity, visibility;
+  }
+  .is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+  .telegram__tittle {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  .modal__text {
+    padding-bottom: 4px;
+  }
+  
+  .modal__contact{
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%;
+    padding-left: 42px;
+    height: 40px; 
+    outline: none;
+  }
+  .modal__contact:hover,
+  .modal__contact:focus{
+    border-color: var(--text-hover-color);
+  }
+  
+  .modal__input:hover,
+  .modal__input:focus{
+    fill: var(--text-hover-color);
+    
+  } 
+  
+  
+  
+  
+  
+  
+  .modal__textarea{
+    height: 120px;
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    resize: none;
+  }
+  .modal__textarea:hover,
+  .modal__textarea:focus{
+    border-color: var(--text-hover-color);
+  }
+  
+  .checkbox__label {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-acent-color);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .checkbox__label::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 1px solid var(--primary-text-color);
+    border-radius: 2px;
+    margin-right: 7px;
+    cursor: pointer;
+  }
+  
+  .checkbox__label:focus + .checkbox__label::before {
+    border-color: var(--text-hover-color);}
+  
+  
+  
+  .checkbox:checked + .checkbox__label::before{
+    background-image: url(../images/icon/vector4.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: var(--text-hover-color);
+    border: var(--text-hover-color);
+    
+   }
+   
+  
+   .checkbox__link {
+    color: var(--text-hover-color);
+    
+  }
+  .button-form {
+    background-color: var(--text-hover-color);
+    color: var(--primary-white-color);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    padding-top: 10px;
+    padding-left: 32px;
+    padding-bottom: 10px;
+    padding-right: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px 0px (0 0 0 15);
+    border-radius: 4px;
+    display: flex;
+  }

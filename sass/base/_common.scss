@@ -1,0 +1,52 @@
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
+  body {
+    color: var(--primary-text-color);
+    background-color: var(--primary-white-color);
+    font-family: "Roboto", "sun-serif";
+  }
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    outline: 1px solid red;
+  }
+  
+  
+  h1,
+  h2,
+  h3,
+  p {
+    margin-top: 0;
+  }
+  ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .text-acent {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-acent-color);
+    align-items: center;
+  
+    display: flex;
+  }

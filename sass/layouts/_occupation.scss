@@ -1,0 +1,41 @@
+.occupation {
+    padding-bottom: 94px;
+  }
+  
+  .occupation__image {
+    position: relative;
+    width: 100%;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
+  .occupation__box {
+    position: absolute;
+    background: rgba(47, 48, 58, 0.8);
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .occupation__image-tittle {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 0.87;
+  
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    margin: 0;
+  }
+  
+  .occupation__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }

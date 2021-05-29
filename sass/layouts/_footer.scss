@@ -1,0 +1,52 @@
+.text-acent-mail {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+  }
+  .text-acent-mail:focus,
+  .text-acent-mail:hover {
+    color: var(--text-hover-color);
+  }
+  
+  .text-acent-mail {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .footer {
+    background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  
+  .footer__adress-mail {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  
+  
+  
+  
+  .footer__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .footer__list {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .footer__svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--primary-white-color);
+  }
+  .footer__icon {
+    margin-left: 70px;
+  }
