@@ -494,6 +494,18 @@ a {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 480px) {
+  .capabilities-title {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
 .occupation__title {
   font-family: Roboto;
   font-weight: bold;
@@ -514,12 +526,24 @@ a {
 }
 
 .social__tittle {
+  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .social__tittle {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
 }
 
 .hero__title {
@@ -583,9 +607,25 @@ a {
   margin-right: auto;
 }
 
-.features__container {
-  display: flex;
-  align-self: start;
+@media screen and (min-width: 480px) {
+  .features .features__container :not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features .features__container :not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features .features__container {
+    display: flex;
+  }
+  .features .features__container :not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .features__box {
@@ -602,10 +642,6 @@ a {
 .features__icon {
   width: 70px;
   height: 70px;
-}
-
-.features__mini:not(:last-child) {
-  margin-right: 30px;
 }
 
 .occupation {
@@ -716,13 +752,6 @@ a {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .team {
-    margin-left: -30px;
-    margin-top: -30px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .team {
     display: flex;
@@ -756,6 +785,7 @@ a {
   .team__list {
     flex-basis: calc((100% - 2 * 30px) / 2);
     background-color: var(--primary-white-color);
+    margin-left: 30px;
     margin-top: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -778,10 +808,29 @@ a {
   padding-bottom: 94px;
 }
 
-.clients__list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media screen and (min-width: 480px) {
+  .clients__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .clients__link {

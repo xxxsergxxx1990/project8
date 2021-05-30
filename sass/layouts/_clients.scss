@@ -5,10 +5,27 @@
   
   
   .clients__list {
-    display: flex;
+
+   
+
+    @media screen and (min-width:480px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-basis: calc((100% - 2 * 30px) / 2);
+    }
+    @media screen and (min-width:768px) {
+      display: flex;
+      align-items: center;
+    justify-content: center;
+    }
+    @media screen and (min-width:1200px) {
+display: flex;
   
     align-items: center;
     justify-content: center;
+    }
+    
   }
   .clients__link {
     width: 170px;
