@@ -1,64 +1,69 @@
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  
-  
-  .clients__list {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
-   
-
-    @media screen and (min-width:480px) {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-basis: calc((100% - 2 * 30px) / 2);
-    }
-    @media screen and (min-width:768px) {
-      display: flex;
-      align-items: center;
-    justify-content: center;
-    }
-    @media screen and (min-width:1200px) {
-display: flex;
-  
-    align-items: center;
-    justify-content: center;
-    }
-    
-  }
-  .clients__link {
-    width: 170px;
+.clients__list {
+  @media screen and (min-width: 480px) {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    box-sizing: border-box;
-    border-radius: 4px;
-    border: 1px solid #afb1b8;
-  
-    height: 90px;
-      transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: border-color;
+    flex-basis: calc((100% - 2 * 30px) / 2);
   }
-  .clients__item:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: calc((100% - 3 * 30px) / 3);
   }
-  
-  .clients__svg {
-    fill: #afb1b8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
   }
-  .clients__svg:not(:last-child) {
-    margin-right: 30px;
-  }
-  
-  .clients__link:hover,
-  .clients__link:focus {
-    border-color: var(--text-hover-color);
-  }
-  .clients__link:hover .clients__svg,
-  .clients__link:focus .clients__svg {
-    fill: var(--text-hover-color);
-  }
-  
+}
+.clients__link {
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+
+  height: 90px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: border-color;
+}
+.clients__item{
+@media screen and (min-width: 480px) {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+}
+
+
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__svg {
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients__svg:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__link:hover,
+.clients__link:focus {
+  border-color: var(--text-hover-color);
+}
+.clients__link:hover .clients__svg,
+.clients__link:focus .clients__svg {
+  fill: var(--text-hover-color);
+}

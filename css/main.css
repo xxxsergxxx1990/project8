@@ -812,6 +812,7 @@ a {
   .clients__list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     flex-basis: calc((100% - 2 * 30px) / 2);
   }
@@ -821,13 +822,16 @@ a {
   .clients__list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+    flex-basis: calc((100% - 3 * 30px) / 3);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .clients__list {
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
   }
@@ -845,6 +849,13 @@ a {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: border-color;
+}
+
+@media screen and (min-width: 480px) {
+  .clients__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .clients__item:not(:last-child) {
