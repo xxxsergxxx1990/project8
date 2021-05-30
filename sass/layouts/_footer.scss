@@ -19,8 +19,29 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
+  .footer__content{
+    
+    @media screen and (min-width:480px) {
+   text-align: center;
+    }
+
+  }
   
-  
+  .footer__adress {
+    color: var(--primary-white-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-bottom: auto;
+    
+    @media screen and (min-width:480px) {
+      text-align: center;
+       }
+    
+   
+  }
   .footer__adress-mail {
     font-family: "Roboto", sans-serif;
     font-style: normal;
@@ -37,10 +58,44 @@
     margin-right: 10px;
   }
   .footer__list {
-    display: flex;
-    align-items: center;
+    
+
+
+    @media screen and (min-width:480px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @media screen and (min-width:768px) {
+      display: flex;
+      align-items: center;
+
+    }
+    @media screen and (min-width:1200px) {
+      display: flex;
+      align-items: center;
+
+    }
   }
-  
+  .footer-box{
+   
+    @media screen and (min-width:480px) {
+
+    }
+    @media screen and (min-width:768px) {
+
+    }
+    @media screen and (min-width:1200px) {
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      align-items: center;
+    }
+
+  }
   
   .footer__svg {
     width: 20px;
@@ -48,5 +103,15 @@
     fill: var(--primary-white-color);
   }
   .footer__icon {
-    margin-left: 70px;
+    
+    @media screen and (min-width:480px) {
+      text-align: center;
+      margin-top: 60px;
+    }
+    @media screen and (min-width:768px) {
+
+    }
+    @media screen and (min-width:1200px) {
+      margin-left: 70px;
+    }
   }

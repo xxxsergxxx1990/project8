@@ -30,7 +30,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 1px solid red;
 }
 
 h1,
@@ -74,7 +73,6 @@ a {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  background-color: teal;
 }
 
 @media screen and (min-width: 480px) {
@@ -82,7 +80,6 @@ a {
     width: 480px;
     padding-left: 15px;
     padding-right: 15px;
-    background-color: royalblue;
   }
 }
 
@@ -91,7 +88,6 @@ a {
     width: 768px;
     padding-left: 15px;
     padding-right: 15px;
-    background-color: salmon;
   }
 }
 
@@ -100,17 +96,7 @@ a {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    background-color: skyblue;
   }
-}
-
-.footer__adress {
-  color: var(--primary-white-color);
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  margin-bottom: auto;
 }
 
 .footer__logo {
@@ -560,7 +546,7 @@ a {
 .hero {
   background: #2f303a;
   text-align: center;
-  width: 1600px;
+  width: 100%;
   padding-top: 200px;
   padding-bottom: 200px;
   display: flex;
@@ -644,8 +630,23 @@ a {
   height: 70px;
 }
 
-.occupation {
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+  .occupation {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .occupation {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .occupation {
+    padding-bottom: 94px;
+    display: block;
+  }
 }
 
 .occupation__image {
@@ -903,6 +904,27 @@ a {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 480px) {
+  .footer__content {
+    text-align: center;
+  }
+}
+
+.footer__adress {
+  color: var(--primary-white-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-bottom: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .footer__adress {
+    text-align: center;
+  }
+}
+
 .footer__adress-mail {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -916,9 +938,38 @@ a {
   margin-right: 10px;
 }
 
-.footer__list {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 480px) {
+  .footer__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__list {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__list {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-box {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .footer__svg {
@@ -927,8 +978,17 @@ a {
   fill: var(--primary-white-color);
 }
 
-.footer__icon {
-  margin-left: 70px;
+@media screen and (min-width: 480px) {
+  .footer__icon {
+    text-align: center;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__icon {
+    margin-left: 70px;
+  }
 }
 
 .partfolio {
@@ -1044,8 +1104,16 @@ a {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.telegram {
-  margin-left: 93px;
+@media screen and (min-width: 480px) {
+  .telegram {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .telegram {
+    margin-left: 93px;
+  }
 }
 
 .telegram__tittle {
@@ -1055,6 +1123,12 @@ a {
   line-height: 1.14;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .telegram__tittle {
+    margin-top: 60px;
+  }
 }
 
 .telegram__svg {
@@ -1072,8 +1146,21 @@ a {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
-  width: 358px;
   height: 50px;
+}
+
+@media screen and (min-width: 480px) {
+  .telegram__text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .telegram__text {
+    width: 358px;
+  }
 }
 
 .modal__text {
@@ -1103,5 +1190,11 @@ a {
   position: relative;
   width: 200px;
   height: 50px;
+}
+
+@media screen and (min-width: 480px) {
+  .telegram__btn {
+    margin-left: 125px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

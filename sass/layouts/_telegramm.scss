@@ -1,64 +1,109 @@
+  
 .telegram {
+  
+  @media screen and (min-width:480px) {
+  margin-left: 0;
+  }
+  @media screen and (min-width:768px) {
+
+  }
+  @media screen and (min-width:1200px) {
     margin-left: 93px;
   }
-  
-  .telegram__tittle {
-    color: var(--primary-white-color);
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    margin-bottom: 20px;
-  }
-  
-  .telegram__svg {
-    position: absolute;
-    fill: var(--primary-white-color);
-    margin-left: 4px;
-  }
-  
-  .telegram__text {
-    background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-sizing: border-box;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    font-size: 16px;
-    line-height: 1.25;
-    color: rgba(255, 255, 255, 0.6);
-    width: 358px;
-    height: 50px;
-  }
-  
-  
-  .modal__text {
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: var(--text-acent-color);
-    padding: 0;
-    margin: 0;
-  }
-  
-  
 
-  .telegram__btn {
-    background-color: var(--text-hover-color);
-    color: var(--primary-white-color);
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1, 87;
-    letter-spacing: 0.06em;
-    padding-top: 10px;
-    padding-left: 32px;
-    padding-bottom: 10px;
-    padding-right: 32px;
-    margin-left: 12px;
-    margin-right: auto;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    position: relative;
-    width: 200px;
-    height: 50px;
+}
+
+.telegram__tittle {
+  color: var(--primary-white-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+
+  @media screen and (min-width:480px) {
+    margin-top: 60px;
   }
+  @media screen and (min-width:768px) {
+
+  }
+  @media screen and (min-width:1200px) {
+
+  }
+
+}
+
+.telegram__svg {
+  position: absolute;
+  fill: var(--primary-white-color);
+  margin-left: 4px;
+}
+
+.telegram__text {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
   
+  height: 50px;
+
+  @media screen and (min-width:480px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  @media screen and (min-width:768px) {
+
+  }
+  @media screen and (min-width:1200px) {
+    width: 358px;
+  }
+
+}
+
+
+.modal__text {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--text-acent-color);
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.telegram__btn {
+  background-color: var(--text-hover-color);
+  color: var(--primary-white-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1, 87;
+  letter-spacing: 0.06em;
+  padding-top: 10px;
+  padding-left: 32px;
+  padding-bottom: 10px;
+  padding-right: 32px;
+  margin-left: 12px;
+  margin-right: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  position: relative;
+  width: 200px;
+  height: 50px;
+
+  @media screen and (min-width:480px) {
+    margin-left: 125px;
+  }
+  @media screen and (min-width:768px) {
+
+  }
+  @media screen and (min-width:1200px) {
+
+  }
+
+}
