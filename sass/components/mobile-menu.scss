@@ -17,9 +17,10 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ 
   &.is-open {
- opacity: 1;
- left: 0;
+  opacity: 1;
+  left: 0;
   }
     
 }
@@ -96,10 +97,10 @@
   }
 }
 
-.btn__mobile-menu.btn__close-icon{
+.btn__mobile-menu .btn__close-icon{
   display: none;
 }
-.btn__mobile-menu .is-open.btn__close-icon{
+.btn__mobile-menu .is-open .btn__close-icon {
   display: block;
 }
 

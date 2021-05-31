@@ -99,11 +99,11 @@
   }
 }
 
-.btn__mobile-menu.btn__close-icon {
+.btn__mobile-menu .btn__close-icon {
   display: none;
 }
 
-.btn__mobile-menu .is-open.btn__close-icon {
+.btn__mobile-menu .is-open .btn__close-icon {
   display: block;
 }
 
