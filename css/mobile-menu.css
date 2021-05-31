@@ -5,6 +5,7 @@
   opacity: 0;
   /* -webkit-transform:translate(-50%,0) ;*/
   /* transform: translate(100%);*/
+  left: 0;
   overflow-y: scroll;
   padding: 48px 40px;
   width: 100%;
@@ -91,6 +92,26 @@
   .btn__mobile-menu {
     display: none;
   }
+}
+
+.btn__open-icon {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn__open-icon:hover,
+.btn__open-icon:focus {
+  fill: var(--text-hover-color);
+}
+
+.btn__close-icon {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn__close-icon:focus,
+.btn__close-icon:hover {
+  fill: var(--text-hover-color);
 }
 
 .btn__close-icon {
