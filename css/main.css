@@ -559,7 +559,7 @@ a {
   left: 100%;
   opacity: 0;
   /* -webkit-transform:translate(-50%,0) ;*/
-  transform: translate(100%);
+  /* transform: translate(100%);*/
   z-index: 99;
   overflow-y: scroll;
   padding: 48px 40px;
