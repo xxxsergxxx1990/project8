@@ -30,7 +30,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  /* outline:  1px solid red;*/
+  outline: 1px solid red;
 }
 
 h1,
@@ -339,7 +339,7 @@ a {
 }
 
 .backdrop {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -524,7 +524,7 @@ a {
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.31;
     text-align: center;
     letter-spacing: 0.03em;
   }
@@ -532,13 +532,25 @@ a {
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 26px;
+  line-height: 1.61;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+  }
 }
 
 .mobile-menu {
@@ -546,8 +558,8 @@ a {
   top: 0;
   left: 100%;
   opacity: 0;
-  /* -webkit-transform:translate(-50%,0) ;
-  transform: translate(100%);*/
+  /* -webkit-transform:translate(-50%,0) ;*/
+  transform: translate(100%);
   z-index: 99;
   overflow-y: scroll;
   padding: 48px 40px;
@@ -558,6 +570,8 @@ a {
   line-height: 1.8;
   letter-spacing: 0.02em;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu.is-open {
@@ -710,7 +724,7 @@ a {
   .contact {
     flex-direction: column;
     display: inline-flex;
-    margin-right: auto;
+    margin-left: 84px;
   }
 }
 
