@@ -13,8 +13,15 @@
     background-color: var(--text-hover-color);
   }
   .menu {
-    display: flex;
-    margin-left: auto;
+    display: none;
+
+    @media screen and(min-width:768px) {
+      display: flex;
+       margin-left: auto;
+    }
+    
+   
+
   }
   
   .menu__item:not(:last-child) {

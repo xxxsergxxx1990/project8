@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Мой проект</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -19,50 +19,154 @@
   </head>
 
   <body>
-  <!--
     <header class="header">
       <div class="container">
-        <nav class="header__nav">
-          <a class="header__logo step" href="./index.html">
-            Web <span class="header__studio">Studio</span></a
-          >
+        <div class="header__container">
+          <nav class="header__nav">
+            <a class="header__logo step" href="./index.html">
+              Web <span class="header__studio">Studio</span></a
+            >
 
-          <ul class="menu">
-            <li class="menu__item">
-              <a href="./index.html" class="menu__list current">Студия</a>
+            <ul class="menu">
+              <li class="menu__item">
+                <a href="./index.html" class="menu__list current">Студия</a>
+              </li>
+              <li class="menu__item">
+                <a href="./portfolio.html" class="menu__list">Портфолио</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__list">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contact">
+            <li class="contact__element">
+              <a href="mailto" class="text-acent-mail">
+                <svg class="contact__svg" width="16" height="12">
+                  <use
+                    href="./images/icon/sprite.svg#icon-mail"
+                    class="contact__svg-mail"
+                  ></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="menu__item">
-              <a href="./portfolio.html" class="menu__list">Портфолио</a>
-            </li>
-            <li class="menu__item">
-              <a href="" class="menu__list">Контакты</a>
+            <li class="contact__element">
+              <a href="tel:+380961111111" class="text-acent-mail">
+                <svg class="contact__svg" width="10" height="16">
+                  <use href="./images/icon/sprite.svg#icon-tell"></use>
+                </svg>
+                +380961111111</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="contact">
-          <li class="contact__element">
-            <a href="mailto" class="text-acent-mail">
-              <svg class="contact__svg" width="16" height="12">
-                <use
-                  href="./images/icon/sprite.svg#icon-mail"
-                  class="contact__svg-mail"
-                ></use>
-              </svg>
-              info@devstudio.com</a
-            >
+          <button 
+          type="button" 
+          class="btn__mobile-menu" 
+          aria-expanded="false"
+          aria-controls="mob-menu"
+          data-menu-button>
+
+          <svg
+            width="40"
+            height="40"
+            aria-label="Закрыть мобильное меню"
+            class="btn__close-icon"
+          >
+            <use href="./images/icon/sprite.svg#icon-close-2"></use>
+          </svg>
+
+          <svg
+            width="40"
+            height="40"
+            aria-label="Открыть мобильное меню"
+            class="btn__open-icon"
+          >
+            <use href="./images/icon/sprite.svg#icon-open-2"></use>
+          </svg>
+        </button>
+        </div>
+      </div>
+    </header>
+    <!--MOB MENU-->
+    <div class="mobile-menu .is-open" data-menu>
+      <div class="mobile__top">
+        <ul class="mobile__list">
+          <li class="mobile__item">
+            <a href="./index.html" class="menu__list current">Студия</a>
           </li>
-          <li class="contact__element">
-            <a href="tel:+380961111111" class="text-acent-mail">
-              <svg class="contact__svg" width="10" height="16">
-                <use href="./images/icon/sprite.svg#icon-tell"></use>
-              </svg>
-              +380961111111</a
-            >
+          <li class="mobile__item">
+            <a href="./portfolio.html" class="menu__list">Портфолио</a>
+          </li>
+          <li class="mobile__item">
+            <a href="" class="menu__list">Контакты</a>
           </li>
         </ul>
+
       </div>
-    </header>-->
-    <main >
+      <div class="mobile__bottom">
+        
+         
+          <p class="mobile__element-phone"> 
+            <a href="tel:+380961111111" class="mobile__element-phone">
+              
+              +380961111111</a
+            >
+          </p>
+          <p class="mobile__element-mail">
+            <a href="mailto" class="text-acent-mail">
+             
+              info@devstudio.com</a
+            >
+          </p>
+       
+        <ul class="mobile-social">
+          <!--Instagram-->
+          <li class="mobile-social__item"><a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener nofollower"
+              class="link"
+              aria-label="instagram"
+            >Instagram
+            </a>                
+          </li>
+          <!--Twitter-->
+          <li class="mobile-social__item"><a
+              href="https://www.twitter.com/"
+              target="_blank"
+              rel="noopener nofollower"
+              class="link"
+              aria-label="twitter"
+            >Twitter                  
+            </a>
+          </li>
+          <!--Facebook-->
+          <li class="mobile-social__item"><a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener nofollower"
+              class="link"
+              aria-label="facebook"
+            >Facebook                  
+            </a>
+          </li>
+          <!--LinkedIn-->
+          <li class="mobile-social__item"><a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener nofollower"
+              class="link"
+              aria-label="linkedin"
+            >LinkedIn                  
+            </a>
+          </li>
+          </ul>
+
+      </div>
+
+    </div>
+    <main>
       <section class="hero">
         <div class="hero__container">
           <h1 class="hero__title">
@@ -77,7 +181,7 @@
 
       <section class="features">
         <div class="container">
-          <h2 class=" visually-hidden">возможности</h2>
+          <h2 class="visually-hidden">возможности</h2>
 
           <ul class="features__container">
             <li class="features__mini">
@@ -166,7 +270,7 @@
 
           <ul class="team">
             <li class="team__list">
-              <img src="images/img122.jpg"  alt="игорь" />
+              <img src="images/img122.jpg" alt="игорь" />
               <div class="team__man">
                 <h3 class="team__member">Игорь Демьяненко</h3>
                 <p lang="en" class="text-acent-com">Product Designer</p>
@@ -211,7 +315,7 @@
             </li>
 
             <li class="team__list">
-              <img src="images/img.jpg"  alt="ольга" />
+              <img src="images/img.jpg" alt="ольга" />
               <div class="team__man">
                 <h3 class="team__member">Ольга Репина</h3>
                 <p lang="en" class="text-acent-com">Frontend Developer</p>
@@ -255,7 +359,7 @@
             </li>
 
             <li class="team__list">
-              <img src="images/img(1).jpg"  alt="николай" />
+              <img src="images/img(1).jpg" alt="николай" />
               <div class="team__man">
                 <h3 class="team__member">Николай Тарасов</h3>
                 <p lang="en" class="text-acent-com">Marketing</p>
@@ -300,7 +404,7 @@
             </li>
 
             <li class="team__list">
-              <img src="images/img(2).jpg"  alt="михаил" />
+              <img src="images/img(2).jpg" alt="михаил" />
               <div class="team__man">
                 <h3 class="team__member">Михаил Ермаков</h3>
                 <p lang="en" class="text-acent-com">UI Designer</p>
@@ -399,80 +503,82 @@
     </main>
 
     <footer class="footer">
-      <div class="footer-box">
       <div class="container">
-        <div class="footer__content">
-          <a class="footer__logo" href="./index.html">
-            Web <span class="header__nav-stud">Studio</span></a
-          >
-          <address >
-            <p class="footer__adress">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul>
-              <li>
-                <a class="footer__adress-mail" href="mailto">info@devstudio.com</a>
+        <div class="footer-box">
+          <div class="footer__content">
+            <a class="footer__logo" href="./index.html">
+              Web <span class="header__nav-stud">Studio</span></a
+            >
+            <address>
+              <p class="footer__adress">г. Киев, пр-т Леси Украинки, 26</p>
+              <ul>
+                <li>
+                  <a class="footer__adress-mail" href="mailto"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__adress-mail" href="tel:+380961111111"
+                    >+380961111111</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer__icon">
+            <h3 class="footer__tittle">Присоеденяйтесь</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="" class="footer__link">
+                  <svg class="footer__svg">
+                    <use href="./images/icon/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a class="footer__adress-mail" href="tel:+380961111111"
-                  >+380961111111</a
-                >
+              <li class="footer__item">
+                <a href="" class="footer__link">
+                  <svg class="footer__svg">
+                    <use href="./images/icon/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">
+                  <svg class="footer__svg">
+                    <use href="./images/icon/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">
+                  <svg class="footer__svg">
+                    <use href="./images/icon/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
+
+          <form class="telegram">
+            <p class="telegram__tittle">Подпишитесь на рассылку</p>
+            <input
+              name="user-message"
+              type="text"
+              class="telegram__text"
+              placeholder="E-mail*"
+              required
+            />
+
+            <button type="submit" class="telegram__btn">
+              Подписаться
+              <svg class="telegram__svg" width="24" height="24">
+                <use href="./images/icon/sprite.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
-
-        <div class="footer__icon">
-          <h3 class="footer__tittle">Присоеденяйтесь</h3>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a href="" class="footer__link">
-                <svg class="footer__svg">
-                  <use href="./images/icon/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__item">
-              <a href="" class="footer__link">
-                <svg class="footer__svg">
-                  <use href="./images/icon/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__item">
-              <a href="" class="footer__link">
-                <svg class="footer__svg">
-                  <use href="./images/icon/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__item">
-              <a href="" class="footer__link">
-                <svg class="footer__svg">
-                  <use href="./images/icon/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <form class="telegram">
-          <p class="telegram__tittle">Подпишитесь на рассылку</p>
-          <input
-            name="user-message"
-            type="text"
-            class="telegram__text"
-            placeholder="E-mail*"
-            required
-          />
-
-          <button type="submit" class="telegram__btn">
-            Подписаться
-            <svg class="telegram__svg" width="24" height="24">
-              <use href="./images/icon/sprite.svg#icon-icon-send"></use>
-            </svg>
-          </button>
-        </form>
-      </div> 
-    </div>
+      </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
@@ -535,7 +641,8 @@
         </form>
       </div>
     </div>
- 
+
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
