@@ -2,9 +2,9 @@
   position: absolute;
   top: 0;
   left: 100%;
-  -webkit-transform: translate(-50%, 0%);
-  transform: translate(-50%, 0%);
-  max-width: 480px;
+  opacity: 0;
+  /* -webkit-transform:translate(-50%,0) ;
+  transform: translate(100%);*/
   z-index: 99;
   overflow-y: scroll;
   padding: 48px 40px;
@@ -18,6 +18,7 @@
 }
 
 .mobile-menu.is-open {
+  opacity: 1;
   left: 0;
 }
 
@@ -96,11 +97,15 @@
   }
 }
 
-.is-open.btn__open-icon {
+.btn__mobile-menu.btn__close-icon {
   display: none;
 }
 
-.btn__close-icon {
-  display: none;
+.btn__mobile-menu .is-open.btn__close-icon {
+  display: block;
+}
+
+.is-open {
+  display: block;
 }
 /*# sourceMappingURL=mobile-menu.css.map */

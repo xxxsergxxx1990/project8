@@ -2,9 +2,9 @@
   position: absolute;
   top: 0;
   left: 100%;
-  -webkit-transform: translate(-50%, 0%);
-  transform: translate(-50%, 0%);
-  max-width: 480px;
+  opacity: 0;
+ /* -webkit-transform:translate(-50%,0) ;
+  transform: translate(100%);*/
   z-index:99 ;
   overflow-y: scroll;
   padding: 48px 40px;
@@ -17,8 +17,8 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 
   &.is-open {
+ opacity: 1;
  left: 0;
-
   }
     
 }
@@ -94,12 +94,13 @@
     display: none;
   }
 }
-.is-open.btn__open-icon{
-    display: none;
+.btn__mobile-menu.btn__close-icon{
+  display: none;
 }
-.btn__close-icon{
-    display: none;
+.btn__mobile-menu .is-open.btn__close-icon{
+  display: block;
 }
-.is-open & {
+
+.is-open  {
     display: block;
 }
