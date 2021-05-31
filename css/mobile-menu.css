@@ -1,7 +1,7 @@
 .mobile-menu {
   position: absolute;
   top: 0;
-  left: 100%;
+  transform: translateX(100%);
   opacity: 0;
   /* -webkit-transform:translate(-50%,0) ;*/
   /* transform: translate(100%);*/
@@ -22,8 +22,9 @@
 
 .mobile-menu.is-open {
   opacity: 1;
-  left: 0;
+  transform: translateX(0);
   display: block;
+  margin-left: 0;
 }
 
 .mobile__list {
